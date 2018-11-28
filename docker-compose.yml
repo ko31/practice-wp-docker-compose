@@ -9,6 +9,7 @@ services:
       MYSQL_PASSWORD: wordpress
     volumes:
       - db-data:/var/lib/mysql
+      - ./.data/db:/docker-entrypoint-initdb.d
 
   wordpress:
     image: wordpress:latest
