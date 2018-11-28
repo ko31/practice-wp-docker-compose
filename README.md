@@ -1,1 +1,1 @@
-echo # practice-wp-docker-compose
+# practice-wp-docker-compose
