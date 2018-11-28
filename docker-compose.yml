@@ -8,7 +8,7 @@ services:
       MYSQL_USER: wordpress
       MYSQL_PASSWORD: wordpress
     volumes:
-      - "./.data/db:/var/lib/mysql"
+      - db-data:/var/lib/mysql
 
   wordpress:
     image: wordpress:latest
@@ -22,3 +22,5 @@ services:
       WORDPRESS_DB_HOST: db
       WORDPRESS_DB_USER: wordpress
       WORDPRESS_DB_PASSWORD: wordpress
+volumes:
+  db-data:
